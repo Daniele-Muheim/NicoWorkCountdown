@@ -52,7 +52,7 @@ export class AppComponent {
     const targetDate = new Date(this.targetTime);
 
     const daysDiff = Math.floor((targetDate.getTime() - this.date.getTime()) / (1000 * 60 * 60 * 24));
-    let workingDaysDiff = (daysDiff *0.8) - 1 - 2;
+    let workingDaysDiff = (daysDiff *0.8) - 10;
 
     for (let i = 0; i < daysDiff; i++) {
       const currentDate = new Date(this.date.getTime() + (i * 1000 * 60 * 60 * 24));
